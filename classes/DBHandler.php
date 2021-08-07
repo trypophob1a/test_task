@@ -14,10 +14,10 @@ class DBHandler
     public function __construct(string $configPath)
     {
 
-        if (!file_exists($_SERVER['DOCUMENT_ROOT'] . '/' . $configPath)) {
+        if (!file_exists($_SERVER['DOCUMENT_ROOT'] .  $configPath)) {
             throw new UnexpectedValueException("Configuration file not found.", 404);
         }
-        $config = require_once $_SERVER['DOCUMENT_ROOT'] . '/' . $configPath;
+        $config = require_once $_SERVER['DOCUMENT_ROOT'] .  $configPath;
         try {
             $this->db = new PDO($config['dns'], $config['username'], $config['password']);
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
