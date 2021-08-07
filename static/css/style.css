@@ -1,0 +1,239 @@
+header {
+    background-color: #2D3136;
+}
+
+header .logo img, header .logo a {
+    margin-top: 50px;
+}
+
+header .contactIcon {
+    display: block;
+    margin: 42px auto;
+}
+
+header form .form-control:focus {
+    background-color: initial;
+    color: #fff;
+}
+
+header form .invalid-feedback {
+    font-size: 18px;
+}
+
+header form label {
+    color: #D7D7D7;
+    font-size: 30px;
+    display: block;
+}
+
+header form .form-items {
+    max-width: 420px;
+}
+
+header form .form-items input, header form .form-items textarea {
+    outline: none;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    background: inherit;
+    color: #fff;
+    margin-top: 16.86px;
+    font-size: 26px;
+}
+
+header form .form-items button {
+    margin-top: 82px;
+    margin-bottom: 96px;
+    width: 200px;
+    height: 80px;
+    background-color: #BE393B;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    transition: all .4s;
+    float: right;
+}
+
+header form .form-items button:hover {
+    background-color: #932d2f;
+}
+
+header form .form-items button:disabled {
+    background-color: rgba(190, 57, 59, 0.66);
+    cursor: not-allowed;
+    font-size: 20px;
+}
+
+header form .form-items input {
+    height: 60px;
+}
+
+header form .form-items textarea {
+    height: 285px;
+    resize: none;
+    max-width: 420px;
+}
+
+.info-msg {
+    display: none;
+    z-index: 9999;
+    color: #fff;
+    font-size: 20px;
+    word-break: break-all;
+    background-color: rgba(26, 30, 33, 0.91);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin: 0 auto;
+    width: 320px;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.88);
+}
+
+.info-enter {
+    visibility: hidden;
+}
+
+.info-enter-active {
+    -webkit-animation: show 2.2s ease-in-out forwards;
+    animation: show 2.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 1;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+    }
+    95% {
+        left: 0;
+        right: 0;
+        bottom: 15%;
+    }
+    100% {
+        right: -200%;
+        bottom: 15%;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 1;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+    }
+    95% {
+        left: 0;
+        right: 0;
+        bottom: 15%;
+    }
+    100% {
+        right: -200%;
+        bottom: 15%;
+    }
+}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.25rem;
+    padding: 79px 0;
+}
+
+main .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px 160px;
+}
+
+main .card {
+    background-color: #E9EEF3;
+    margin: 26px 16px;
+    width: calc(100% - 32px);
+}
+
+main .card:nth-child(even) h3 {
+    background-color: #58AD52;
+}
+
+main .card:nth-child(even) .email {
+    color: #58AD52;
+}
+
+main .card h3 {
+    background-color: #4B596C;
+    color: #fff;
+    padding: 19px 17px;
+    font-size: 2.25rem;
+}
+
+main .card .email {
+    font-size: 2.25rem;
+    margin-top: 47px;
+}
+
+main .card .msg {
+    padding: 39px 15px;
+    font-size: 26px;
+}
+
+@media screen and (min-width: 560px) {
+    main .card {
+        width: calc(50% - 32px);
+    }
+}
+
+@media screen and (min-width: 780px) {
+    main .card {
+        width: calc(33.33333% - 32px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header form .form-inputs {
+        align-self: stretch;
+    }
+
+    header form .form-items #email-label {
+        margin-top: 98px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header form .form-items {
+        margin: 0 61px;
+    }
+}
+
+footer{
+    background-color: #2F3338;
+    min-height: 120px;
+    display: flex;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.social {
+    margin: 0 24px;
+    background-color: #37414E;
+    border: 3px solid #454648;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 2px;
+}

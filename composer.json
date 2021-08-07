@@ -1,0 +1,24 @@
+{
+  "name": "vendor_name/invite.loc",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Kek",
+      "email": "email@example.com"
+    }
+  ],
+
+  "require": {
+    "PHP": ">= 7.4",
+    "ext-json": "*",
+    "ext-pdo": "*"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "classes\\": "classes/"
+    }
+  }
+}
